@@ -18,15 +18,11 @@ const particlesConfig = {
             animation: { enable: true, speed: 2, minimumValue: 0.1, sync: false }
         },
         links: {
-            enable: true,
-            distance: 150,
-            color: "#646cff",
-            opacity: 0.2,
-            width: 1
+            enable: false  // Disabled the connecting lines
         },
         move: {
             enable: true,
-            speed: 1,
+            speed: 0.5,  // Reduced speed for subtler movement
             direction: "none",
             random: true,
             straight: false,
@@ -36,21 +32,10 @@ const particlesConfig = {
     interactivity: {
         events: {
             onHover: {
-                enable: true,
-                mode: "grab"
+                enable: false  // Disabled hover interaction
             },
             onClick: {
-                enable: true,
-                mode: "push"
-            }
-        },
-        modes: {
-            grab: {
-                distance: 140,
-                links: { opacity: 0.5 }
-            },
-            push: {
-                quantity: 4
+                enable: false  // Disabled click interaction
             }
         }
     }
